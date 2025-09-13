@@ -21,7 +21,27 @@
 }
 
 .right {
+  padding: 8px;
   grid-column: 5/6;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.right-container {
+  background-color: white;
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.right-container p {
+  font-size: 12px;
+}
+
+.right-container h3 {
+  font-size: 16px;
 }
 
 .main {
@@ -72,6 +92,11 @@ li {
   margin: 6px;
 }
 
+.big-icons {
+  width: 50px;
+  margin: 8px;
+}
+
 input {
   width: 90%;
   background-color: var(--gray);
@@ -80,7 +105,8 @@ input {
 }
 
 .header-top,
-.header-bottom {
+.header-bottom,
+.user {
   display: flex;
 }
 
