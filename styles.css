@@ -11,6 +11,8 @@
 
 .header {
   grid-column: 2/6;
+  display: grid;
+  grid-template-rows: 80px 80px;
 }
 
 .right,
@@ -57,6 +59,56 @@ li {
   width: max(15px, 10%);
   margin: 12px;
   filter: invert(100%);
+}
+
+.icon {
+  width: 20px;
+  margin: 4px;
+}
+
+#big-icon {
+  width: 50px;
+  margin: 6px;
+}
+
+input {
+  width: 90%;
+  background-color: var(--gray);
+  border-radius: 12px;
+  margin: 4px;
+}
+
+.header-top,
+.header-bottom {
+  display: flex;
+}
+
+.header-top > div,
+.header-bottom > div {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  margin: 8px;
+  flex-grow: 1;
+  justify-content: right;
+}
+
+#greeting {
+  justify-content: left;
+  margin: 8px 32px;
+}
+
+#search {
+  flex-grow: 3;
+}
+
+button {
+  background-color: var(--blue);
+  color: white;
+  border-radius: 16px;
+  padding: 8px 16px;
+  margin: 8px;
+  border-color: lightblue;
 }
 
 .side-item {
