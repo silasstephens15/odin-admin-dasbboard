@@ -26,6 +26,7 @@
 
 .main {
   grid-column: 2/5;
+  padding: 8px;
 }
 
 body {
@@ -126,4 +127,31 @@ a {
   text-decoration: none;
   color: white;
   font-weight: bold;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 12px;
+  margin: 12px;
+}
+
+.card {
+  position: relative;
+  background-color: white;
+  padding: 8px 8px 32px;
+}
+
+.card p {
+  font-size: 16px;
+}
+
+.small-h2 {
+  font-size: 20px;
+}
+
+.images {
+  position: absolute;
+  right: 24px;
 }
